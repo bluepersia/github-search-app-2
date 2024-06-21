@@ -119,6 +119,7 @@ html {
 }
 .cmp__name {
   font-size: 1.23rem;
+  margin-top: 0;
   margin-bottom: 0;
   color: #2B3442;
 }
@@ -189,6 +190,9 @@ html {
   .cmp__input {
     font-size: 1.2rem;
   }
+  .cmp__btn-search {
+    font-size: 1.066rem;
+  }
   .cmp__main {
     padding: 2.66rem;
   }
@@ -233,6 +237,38 @@ html {
   .cmp__detail-company {
     grid-column: 2/-1;
     grid-row: 2/-1;
+  }
+}
+@media (min-width: 1440px) {
+  .cmp {
+    min-width: 730px;
+  }
+  .cmp__main__top {
+    grid-template-columns: 117px auto auto;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 2.13rem;
+  }
+  .cmp__img-profile {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+  .cmp__name {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .cmp__nickname {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-bottom: 1.33rem;
+  }
+  .cmp__bio {
+    grid-column: 2/-1;
+    grid-row: 3/-1;
+    margin-top: 0;
+  }
+  .cmp__date {
+    grid-column: 3/-1;
+    grid-row: 1/2;
   }
 }
 
