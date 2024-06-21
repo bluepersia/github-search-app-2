@@ -4,6 +4,9 @@ $color-GreyBlue: #4B6A9B;
 $color-DarkGrey: #2B3442;
 $color-LightGrey: #F6F8FF;
 $color-White: #FEFEFE;
+$color-Red: #F74646;
+$color-DarkBg: #141D2F;
+$color-CmpDark: #1E2A47;
 
 body {
     margin: 0;
@@ -17,4 +20,19 @@ body {
     padding: 2.38rem 6.4% 6rem;
 }
 
+p {
+    line-height: 1.8;
+    color: $color-GreyBlue;
+}
 
+
+html {
+    font-size: 13px;
+}
+
+@media (min-width:768px)
+{
+    html {
+        font-size: 15px;
+    }
+}

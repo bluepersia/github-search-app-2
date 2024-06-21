@@ -38,6 +38,15 @@
         display: flex;
         align-items: center;
         gap:1.23rem;
+        background:none;
+        border:none;
+        cursor: pointer;
+        transition: all 300ms;
+
+        &:hover 
+        {
+            filter:brightness(120%);
+        }
     
         &__text 
         {
@@ -46,6 +55,7 @@
             margin-bottom: 0;
             letter-spacing: .2em;
             font-size: 13px;
+            transition: all 300ms;
         }
         &__img 
         {
@@ -64,6 +74,7 @@
         border-radius: 15px;
         margin-bottom: 1.23rem;
         padding-left: 1.23rem;
+        transition: all 300ms;
 
         & * {
             margin: 0;
@@ -83,8 +94,15 @@
         font-family: inherit;
         font-size: inherit;
         width: 100%;
+        color:$color-GreyBlue;
+        margin-right: 1rem;
 
+        &::placeholder 
+        {
+            color:$color-GreyBlue;
+        }
     }
+
 
     &__btn-search
     {
@@ -105,6 +123,12 @@
         background-color: $color-White;
         border-radius: 15px;
         padding:2.46rem 1.84rem;
+        transition: all 300ms;
+
+        &--inactive 
+        {
+            display: none;
+        }
         &__top
         {
             display: grid;
@@ -121,6 +145,7 @@
         grid-column: 1 / 2;
         grid-row: 1 / -1;
         object-fit: cover;
+        border-radius: 50%;
     }
 
 
@@ -161,6 +186,7 @@
         background-color: $color-LightGrey;
         padding: 1.38rem 1.15rem;
         margin-bottom: 1.8rem;
+        border-radius: 10px;
     }
 
 
@@ -202,6 +228,12 @@
         &__value 
         {
             margin: 0;
+        }
+
+        &--unavailable
+        {
+            opacity: 50%;
+
         }
     }
     
@@ -356,6 +388,75 @@
         {
             grid-column: 3 / -1;
             grid-row: 1 / 2;
+        }
+
+        
+    }
+}
+
+
+
+
+body.dark
+{
+    background-color: $color-DarkBg;
+
+    color:$color-White;
+    .cmp 
+    {
+        &__theme-toggle
+        {
+            &__text 
+            {
+                color: $color-White;
+            }
+        }
+
+        &__search-form
+        {
+            background-color: $color-CmpDark;
+        }
+
+        &__input::placeholder
+        {
+            color:white;
+        }
+
+        &__main
+        {
+            background-color: $color-CmpDark;
+        }
+
+
+        &__name, &__date, &__bio
+        {
+            color: $color-White;
+        }
+
+
+        &__stats
+        {
+            background-color:$color-DarkBg;
+        }
+
+        &__stat
+        {
+            &__title, &__value 
+            {
+                color: $color-White;
+            }
+        }
+
+        &__detail
+        {
+            &__icon path 
+            {
+                fill:$color-White;
+            }
+
+            &__value {
+                color: $color-White;
+            }
         }
     }
 }
