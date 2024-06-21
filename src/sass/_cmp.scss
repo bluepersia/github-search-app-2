@@ -45,6 +45,7 @@
             text-transform: uppercase;
             margin-bottom: 0;
             letter-spacing: .2em;
+            font-size: 13px;
         }
         &__img 
         {
@@ -127,6 +128,7 @@
     {
         font-size: 1.23rem;
         margin-bottom: 0;
+        color: $color-DarkGrey;
     }
 
     &__nickname
@@ -157,6 +159,7 @@
         text-align: center;
         background-color: $color-LightGrey;
         padding: 1.38rem 1.15rem;
+        margin-bottom: 1.8rem;
     }
 
 
@@ -164,13 +167,19 @@
     {
         &__title
         {
-            color: $color-GreyBlue;
+            color: $color-Grey;
             font-size: .84rem;
+            margin-bottom: 0.615rem;
+            font-weight: 400;
         }
 
         &__value
         {
+            margin-top: 0;
+            margin-bottom: 0;
             font-size: 1.23rem;
+            color:$color-DarkGrey;
+            font-weight: bold;
         }
     }
 
@@ -197,4 +206,101 @@
     
 
   
+}
+
+
+@media (min-width:768px)
+{
+    .cmp 
+    {
+        min-width: 573px;
+
+        &__search-form
+        {
+            padding: .66rem;
+            padding-left: 2.13rem;
+        }
+
+        &__img-search 
+        {
+            margin-right: 1.6rem;
+        }
+
+        &__input 
+        {
+            font-size: 1.2rem;
+        }
+
+
+        &__main
+        {
+            padding: 2.66rem;
+            &__top
+            {
+                grid-template-columns: 117px auto;
+            }
+        }
+
+        &__name 
+        {
+            font-size: 1.73rem;
+        }
+
+        &__nickname
+        {
+            font-size: 1.066rem;
+        }
+
+        &__stats
+        {
+            text-align: left;
+            justify-content: start;
+            gap:5.4rem;
+            margin-bottom: 2rem;
+        }
+
+        &__stat
+        {
+            &__title
+            {
+                font-size: .866rem;
+            }
+
+            &__value 
+            {
+                font-size: 1.46rem;
+            }
+        }
+
+        &__details 
+        {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto auto;
+        }
+
+
+        &__detail-location
+        {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+        }
+        &__detail-website 
+        {
+            grid-column: 1 / 2;
+            grid-row: 2 / -1;
+        }
+        
+        &__detail-twitter
+        {
+            grid-column: 2 / -1;
+            grid-row:  1 / 2;
+        }
+
+        &__detail-company
+        {
+            grid-column: 2 / -1;
+            grid-row: 2 /-1;
+        }
+    }
 }
