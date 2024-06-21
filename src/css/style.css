@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  min-height: 100vh;
+  background-color: #F6F8FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2.38rem 6.4% 6rem;
+}
+
+/*# sourceMappingURL=style.css.map */
